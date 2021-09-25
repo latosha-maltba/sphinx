@@ -50,7 +50,6 @@ class JSObject(ObjectDescription[Tuple[str, str]]):
 
     option_spec: OptionSpec = ObjectDescription.option_spec.copy()
     option_spec.update({
-        'noindex': directives.flag,
         'noindexentry': directives.flag,
     })
 
