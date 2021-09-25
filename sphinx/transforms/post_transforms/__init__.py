@@ -287,7 +287,7 @@ class HideHiddenDesc(SphinxPostTransform):
 
             ids: List[str] = []
             collectIds(node, ids)
-            newNode = nodes.inline()
+            newNode = nodes.target()
             newNode['ids'] = ids
             node.replace_self(newNode)
             node['classes'] = []  # replace_self seems to copy attributes
